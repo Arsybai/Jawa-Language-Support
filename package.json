@@ -1,0 +1,39 @@
+{
+  "name": "jawa-language-support",
+  "displayName": "Jawa Language Support",
+  "description": "An extension for Jawa-Language syntax highlighting",
+  "version": "1.0.0",
+  "publisher": "arsybai",
+  "engines": {
+      "vscode": "^1.60.0"
+  },
+  "categories": [
+      "Programming Languages"
+  ],
+  "icon": "icon.png",
+  "contributes": {
+      "languages": [
+          {
+              "id": "jawalang",
+              "aliases": [
+                  "Jawalang",
+                  "jawalang"
+              ],
+              "extensions": [
+                  ".jw",
+                  ".jwi",
+                  ".jww",
+                  ".jwcw"
+              ],
+              "configuration": "./language-configuration.json"
+          }
+      ],
+      "grammars": [
+          {
+              "language": "jawalang",
+              "scopeName": "source.jawalang",
+              "path": "./syntaxes/jawalang.tmLanguage.json"
+          }
+      ]
+  }
+}
